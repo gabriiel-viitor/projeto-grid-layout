@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccc;
+
+}
+
+
+
+
+div#template-area{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'nav'
+    'section'
+    'main'
+    'banner'
+    'extra'
+    'image';
+
+
+    max-width: 600px;
+    border: 2px solid black;
+    margin: auto;
+    
+}
+
+
+
+
+
+header{
+    grid-area: header;
+    background-color: rgba(11, 11, 88, 0.712);
+    height: 100px;
+    
+}
+
+
+nav{
+    grid-area: nav;
+    background-color: rgb(173, 52, 52);
+    height: 100px;
+}
+
+section{
+    grid-area: section;
+    background-color: aquamarine;
+    height: 170px;
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(14, 51, 51);
+    height: 160px;
+}
+
+#banner{
+    grid-area: banner;
+    background-color: yellow;
+    height: 140px;
+}
+
+#extra{
+    grid-area: extra;
+    background-color: rgb(76, 133, 76);
+    height: 140px;
+}
+
+#image{
+    grid-area: image;
+    background-color: gainsboro;
+    height: 150px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    
+    body{
+        background-color: rgb(100, 99, 99);
+    }
+
+    div#template-area{
+        display: grid;
+        grid-template-areas: 
+        'header header header'
+        'section section section'
+        'nav main main'
+        'nav banner banner'
+        'nav extra image';
+
+
+        max-width: 950px;
+        margin: auto;      
+}
+
+header{
+    grid-area: header;
+    background-color: rgba(11, 11, 88, 0.712);
+    
+    
+}
+
+
+nav{
+    grid-area: nav;
+    background-color: rgb(173, 52, 52);
+    height: 100%;
+}
+
+section{
+    grid-area: section;
+    background-color: aquamarine;
+    
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(14, 51, 51);
+    
+}
+
+#banner{
+    grid-area: banner;
+    background-color: yellow;
+    
+}
+
+#extra{
+    grid-area: extra;
+    background-color: rgb(76, 133, 76);
+    height: 100%;
+}
+
+#image{
+    grid-area: image;
+    background-color: gainsboro;
+    
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1024px){
+    body{
+        background-color: rgb(156, 148, 163);
+    }
+
+    div#template-area{
+        display: grid;
+        grid-template-areas: 
+        'header nav nav'
+        'section section section'
+        'main main image'
+        'main main extra'
+        'banner banner banner';
+
+        max-width: 90%;
+        margin: auto;
+}
+
+header{
+    grid-area: header;
+    background-color: rgba(11, 11, 88, 0.712);
+    
+    
+}
+
+
+nav{
+    grid-area: nav;
+    background-color: rgb(173, 52, 52);
+    height: 100%;
+}
+
+section{
+    grid-area: section;
+    background-color: aquamarine;
+    
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(14, 51, 51);
+    height: 100%; 
+}
+
+#banner{
+    grid-area: banner;
+    background-color: yellow;
+    
+}
+
+#extra{
+    grid-area: extra;
+    background-color: rgb(76, 133, 76);
+    height: 100px;
+}
+
+#image{
+    grid-area: image;
+    background-color: gainsboro;
+    height: 100px;
+}
+
+
+}
